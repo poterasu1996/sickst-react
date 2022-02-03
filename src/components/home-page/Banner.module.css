@@ -1,0 +1,31 @@
+.banner {
+    width: 100%;
+    min-height: 70rem;
+    height: auto;
+    background-color: #1a1a1a;
+    position: relative;
+    display: flex;
+    align-items: center; }
+    .banner .container {
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center; }
+    .banner .left-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem; }
+      .banner .left-side .title {
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+        color: #fff; }
+      .banner .left-side .subtitle {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: #fff; }
+        .banner .left-side .subtitle:last-of-type {
+          margin-top: 6rem; }
+    .banner .right-side img {
+      width: 100%; }
+  
