@@ -20,14 +20,14 @@ const Product = (props) => {
                     </div>
                 </div>
                 <div className="product-card-title">
-                    <span className="brand">Invictus</span>
-                    <span className="model">Parfume</span>
+                    <span className="brand">{props.brand}</span>
+                    <span className="model">{props.model}</span>
                 </div>
                 <div className="product-card-fragrance">Fragrance elements</div>
                 <div className="product-card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur esse quia officia, 
                     inventore rerum reprehenderit sed placeat excepturi perspiciatis natus laboriosam quibusdam unde?
                 </div>
-                <CardButton price={'122'} />
+                <CardButton price={props.price} />
             </div>
         </div>           
     </Fragment>

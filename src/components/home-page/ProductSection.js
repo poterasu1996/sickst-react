@@ -16,9 +16,24 @@ const ProductSection = () => {
 
                 <div className="products">
                     <div className="row">
-                        <Product image={image1}/>
-                        <Product image={image2}/>
-                        <Product image={image3}/>
+                        <Product 
+                            image={image1}
+                            brand={'Invictus'}
+                            model={'Eau de toilete'}
+                            price={'221'}
+                        />
+                        <Product 
+                            image={image2}
+                            brand={'Sauvage'}
+                            model={'Eau de parfum'}
+                            price={'321'}
+                        />
+                        <Product 
+                            image={image3}
+                            brand={'Paco Rabanne'}
+                            model={'Parfum'}
+                            price={'521'}
+                        />
                     </div>
                 </div>
 
