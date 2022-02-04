@@ -4,10 +4,11 @@ import { Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Welcome from './pages/Welcome'
 import Products from './pages/Products'
+import { Fragment } from 'react';
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <Route path="/" exact>
         <Home />
       </Route>
@@ -17,7 +18,7 @@ function App() {
       <Route path="/products">
         <Products />
       </Route>
-    </div>
+    </Fragment>
   );
 }
 

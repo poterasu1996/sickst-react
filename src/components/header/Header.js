@@ -1,29 +1,35 @@
-import { Fragment } from "react";
-import { Modal } from "react-bootstrap";
+import { Fragment, useState } from "react";
+import { Button, Modal } from "react-bootstrap";
+import HamburgerBtn from "./HamburgerBtn";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import classes from './Header.module.css'
 import Logo from "./Logo";
-import NavMenu from "./NavMenu"
+import NavMenu from "./NavMenu";
+import SideModal from "./SideModal";
 
 const Header = () => {
-  const headerClasses = `container ${classes.header}`
+  const [modalShow, setModalShow] = useState(false);
 
-  return <Fragment>
-    <header>
-        <div className={headerClasses}>
-            <Logo />
-            <NavMenu />
-            
+  return (
+    <Fragment>
+      <header>
+        <div className="container header">
+          <Logo />
+          <NavMenu />
 
-            <div className={classes['right-side']}>
-                <a className={classes.login}>Login</a>
-                <a className={classes.menu} href="#" id="mobile-menu" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></a>
+          <div className="right-side">
+            <a className="login">Login</a>
+            <HamburgerBtn onClick={() => setModalShow(true)} />
+            {/* <Button variant="primary" onClick={() => setModalShow(true)}>
+                    Launch modal
+                </Button> */}
 
-                {/* <Modal show={true}>Modal</Modal> */}
+            <SideModal show={modalShow} onHide={() => setModalShow(false)} />
+            {/* <a className='menu' href="#" id="mobile-menu" data-bs-toggle="modal" data-bs-target="#staticBackdrop"></a> */}
 
-                {/* modal */}
-                {/* <div className="modal fade left-slide" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            {/* <Modal show={true}>Modal</Modal> */}
+
+            {/* modal */}
+            {/* <div className="modal fade left-slide" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -33,11 +39,11 @@ const Header = () => {
                         </div>
                     </div>
                 </div> */}
-
-            </div>
+          </div>
         </div>
-    </header>
-  </Fragment>;
+      </header>
+    </Fragment>
+  );
 };
 
 export default Header;

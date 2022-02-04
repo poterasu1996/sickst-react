@@ -1,0 +1,19 @@
+.button-second-empty {
+    display: block;
+    width: 100%;
+    border: 1px solid red;
+  
+    padding: 0 20px;
+    font-size: 1.8rem;
+    line-height: 5.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: #cc3633;
+    &:hover {
+      background-color: #cc3633;
+      color: #fff;
+    }
+    &.big {
+      max-width: 200px;
+    }
+}

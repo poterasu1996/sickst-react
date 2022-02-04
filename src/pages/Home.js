@@ -7,6 +7,8 @@ import SubsInfo from "../components/home-page/SubsInfo";
 import Brands from "../components/home-page/Brands";
 import Subscriptions from "../components/home-page/Subscriptions";
 import ProductSection from "../components/home-page/ProductSection";
+import BannerBottom from "../components/home-page/BannerBottom";
+import Footer from "../components/footer/Footer";
 
 const Home = () => {
     return <Fragment>
@@ -18,8 +20,10 @@ const Home = () => {
                 <Brands />
                 <Subscriptions />
                 <ProductSection />
+                <BannerBottom />
             </div>
         </div>
+        <Footer />
     </Fragment>
     
 }
