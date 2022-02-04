@@ -1,0 +1,16 @@
+@import '../general-components/SecondaryButton.scss';
+@import '../general-components/PrimaryBtn.scss';
+@import '../general-components/CardButton.scss';
+@import './Banner';
+@import './SubsInfo';
+@import './Brands';
+@import './LogoGrid';
+@import './Subscriptions';
+@import './ProductSection';
+@import './Product';
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

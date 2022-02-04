@@ -1,0 +1,13 @@
+.logo-grid {
+    .row {
+        width: 60%;
+        .col-4 {
+            display: flex;
+            height: 8rem;
+        }
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

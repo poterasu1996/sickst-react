@@ -1,0 +1,27 @@
+.card-button {
+    width: 100%;
+    color: #141414;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    position: relative;
+    &::before {
+      content: "+";
+      display: block;
+      position: absolute;
+      text-align: center;
+      color: #fff;
+      font-size: 26px;
+      width: 30px;
+      height: 30px;
+      left: -38px;
+      border-radius: 45px;
+      background-color: black;
+    }
+    &:hover {
+      color: #cc3633;
+      &::before {
+        background-color: #cc3633;
+      }
+    }
+}

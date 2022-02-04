@@ -1,0 +1,32 @@
+.subs-info {
+    margin: 5rem 0 5rem 0;
+    .title {
+        font-size: 3.8rem;
+        line-height: 4.8rem;
+    }
+    .subs-cards {
+        .card {
+            height: 100%;
+            justify-content: space-between;
+            border: none;
+            &-info {
+                .title {
+                    font-size: 2.3rem;
+                    line-height: 3.3rem;
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                }
+                .subtitle {
+                    font-size: 1.6rem;
+                    line-height: 2.3rem;
+                    margin-bottom: 2rem;
+                }
+            }
+            &-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
