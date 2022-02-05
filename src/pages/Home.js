@@ -25,7 +25,6 @@ const Home = () => {
         </div>
         <Footer />
     </Fragment>
-    
 }
 
 export default Home;

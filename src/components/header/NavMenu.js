@@ -1,13 +1,15 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
+import NavLink from "./NavLink";
 
 const NavMenu = () => {
     return <Fragment>
         <ul className='nav-menu'>
             <li className='nav-link'>
-                <a href="#">Women</a>
+                <NavLink btnName={'Women'} to={'subscription/women'} />
             </li>
             <li className='nav-link'>
-                <a href="#">Men</a>
+                <NavLink btnName={'Men'} to={'subscription/men'} />
             </li>
         </ul>
     </Fragment>

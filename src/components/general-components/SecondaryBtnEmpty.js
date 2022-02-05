@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const SecondaryBtnEmpty = (props) => {
   return (
-    <a className="button-second-empty" href="#">
+    <Link className="button-second-empty" to={props.to}>
       {props.btnName}
-    </a>
+    </Link>
   );
 };
 

@@ -9,7 +9,7 @@ const BannerBottom = () => {
                     <span className="title">Acceseaza peste 50 de produse in fiecare luna!</span>
                 </div>
                 <div>
-                    <PrimaryBtn btnName={'Autentificare'} />
+                    <PrimaryBtn btnName={'Autentificare'} to={'/register'} />
                 </div>
             </div>
         </div>

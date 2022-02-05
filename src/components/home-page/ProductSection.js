@@ -41,7 +41,7 @@ const ProductSection = () => {
                 </div>
                 <div className="more-prod">
                     <div className="col-3">
-                        <SecondaryBtnEmpty btnName={'Vezi mai multe produse'} />
+                        <SecondaryBtnEmpty btnName={'Vezi mai multe produse'} to={'/'}/>
                     </div>
                 </div>
             </div>

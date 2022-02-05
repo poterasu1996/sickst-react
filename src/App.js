@@ -2,8 +2,9 @@ import './App.scss';
 import { Route } from 'react-router-dom';
 
 import Home from './pages/Home';
-import Welcome from './pages/Welcome'
-import Products from './pages/Products'
+import Register from './pages/Register';
+import SubscriptionsWomen from './pages/SubscriptionsWomen';
+import SubscriptionsMen from './pages/SubscriptionsMen';
 import { Fragment } from 'react';
 
 function App() {
@@ -12,11 +13,14 @@ function App() {
       <Route path="/" exact>
         <Home />
       </Route>
-      <Route path="/welcome">
-        <Welcome />
+      <Route path="/register">
+        <Register />
       </Route>
-      <Route path="/products">
-        <Products />
+      <Route path="/subscriptions/women" exact>
+        <SubscriptionsWomen />
+      </Route>
+      <Route path="/subscriptions/men" exact>
+        <SubscriptionsMen />
       </Route>
     </Fragment>
   );

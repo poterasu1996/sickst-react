@@ -19,7 +19,7 @@ const SubsInfo = () => {
                             <div className="title">1. Alege parfumul</div>
                             <div className="subtitle">Alege parfumul preferat de la producatori de top - vei avea acces la intregul catalog.</div>
                             <div className="card-img">
-                                <img src={step1}></img>
+                                <img src={step1} alt=""></img>
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const SubsInfo = () => {
                             <div className="title">2. Alege subscriptia</div>
                             <div className="subtitle">Cu un design atragator si subtil, sticlutele de 10ml sunt concepute sa-ti ajunga toata luna, pana la urmatoarea comanda.</div>
                             <div className="card-img">
-                                <img src={step2}></img>
+                                <img src={step2} alt=""></img>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const SubsInfo = () => {
                             <div className="title">3. Livram parfumul</div>
                             <div className="subtitle">Lunar ver primi acasa o noua sticluta de 10ml. Poti anula abonamentul oricand.</div>
                             <div className="card-img">
-                                <img src={step3}></img>
+                                <img src={step3} alt=""></img>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 
-import logo from '../../assets/img/svg/parfumerie-douglas-vector-logo.svg';
 import Logo from "./Logo";
 import logo1 from '../../assets/img/svg/parfumerie-douglas-vector-logo.svg'
 import logo2 from '../../assets/img/svg/sephora.svg'

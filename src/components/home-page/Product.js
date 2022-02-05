@@ -7,16 +7,16 @@ const Product = (props) => {
         <div className="col-4">
             <div className="product-card">
                 <div className="product-card-image">
-                    <img src={props.image}></img>
+                    <img src={props.image} alt=""></img>
                     <span className="tag black">Exclussive</span>
                 </div>
                 <div className="product-card-rating">
                     <div className="five-stars">
-                        <img src={star}></img>
-                        <img src={star}></img>
-                        <img src={star}></img>
-                        <img src={star}></img>
-                        <img src={star}></img>
+                        <img src={star} alt=""></img>
+                        <img src={star} alt=""></img>
+                        <img src={star} alt=""></img>
+                        <img src={star} alt=""></img>
+                        <img src={star} alt=""></img>
                     </div>
                 </div>
                 <div className="product-card-title">

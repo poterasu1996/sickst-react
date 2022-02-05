@@ -16,7 +16,7 @@ const Brands = () => {
                     <span className="subtitle">Colaboram doar cu distribuitori autorizati, asigurand produse 100% autentice.</span>
                 </div>
                 <LogoGrid />
-                <PrimaryBtn btnName={'Afla mai multe'}/>
+                <PrimaryBtn btnName={'Afla mai multe'} to={'/register'}/>
             </div>
         </div>
     </Fragment>
