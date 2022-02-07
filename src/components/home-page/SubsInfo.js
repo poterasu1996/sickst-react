@@ -13,7 +13,7 @@ const SubsInfo = () => {
             <div className="row mt-5 subs-cards">
 
                 {/* card */}
-                <div className="col-4">
+                <div className="col-12 col-md-4">
                     <div className="card">
                         <div className="card-info">
                             <div className="title">1. Alege parfumul</div>
@@ -24,7 +24,7 @@ const SubsInfo = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-12 col-md-4">
                     <div className="card">
                         <div className="card-info">
                             <div className="title">2. Alege subscriptia</div>
@@ -35,7 +35,7 @@ const SubsInfo = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-12 col-md-4">
                     <div className="card">
                         <div className="card-info">
                             <div className="title">3. Livram parfumul</div>

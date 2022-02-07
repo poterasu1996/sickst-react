@@ -6,6 +6,10 @@
   position: relative;
   display: flex;
   align-items: center;
+  @media (max-width:768px) {
+    padding: 3rem 0 6rem 0;
+  }
+
   .container {
       height: 100%;
       margin: 0 auto;

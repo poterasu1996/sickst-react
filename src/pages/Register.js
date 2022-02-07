@@ -68,6 +68,23 @@ const Register = () => {
                                 </form>
                             </div>
                         </div>
+                        <div className="col-5 login">
+                            <span className="login-link">
+                                Have an account? <a href="#">Log in</a>
+                            </span>
+                            <div className="split">
+                                <span className="line"></span>
+                                <span className="text">or</span>
+                                <span className="line"></span>
+                            </div>
+                            <div className="fb-signup">
+                                <h1>Facebook</h1>
+                                <h1>Google</h1>
+                            </div>
+                        </div>
+                        <div className="col-5 copyright">
+                            <span>&copy; Sickst</span>
+                        </div>
                     </div>
                 </div>
             </div>
