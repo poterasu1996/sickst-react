@@ -4,11 +4,12 @@ import SimpleHeader from "../components/header/SimpleHeader";
 import maleIcon from "../assets/img/male-icon.png"
 import femaleIcon from "../assets/img/female-icon.jpg"
 
-import { FloatingLabel, Form } from "react-bootstrap";
-import SecondaryButton from "../components/general-components/SecondaryButton";
+import Signup from "../components/auth/Signup";
+import NavLink from "../components/header/NavLink";
+import { AuthProvider } from "../contexts/AuthContext";
 
 const Register = () => {
-    return <Fragment>
+    return <AuthProvider>
         <SimpleHeader />
         <div className="main-content">
             <div className="main-body">
@@ -36,41 +37,12 @@ const Register = () => {
                         </div>
                         <div className="col-5">
                             <div className="form">
-                                <form action="#">
-                                    <FloatingLabel
-                                        controlId="floatingInput"
-                                        label="Email address"
-                                        className="form-field"
-                                    >
-                                        <Form.Control type="email" placeholder="Email address" />
-                                    </FloatingLabel>
-                                    <FloatingLabel 
-                                        controlId="floatingPassword" 
-                                        label="Password"
-                                        className="form-field"
-                                    >
-                                        <Form.Control type="password" placeholder="Password" />
-                                    </FloatingLabel>
-                                    <div className="form-field newsletter">
-                                        <label className="check-box">
-                                            <input className="cb" type="checkbox"></input>
-                                            <span className="custom-cb"></span>
-                                            <span className="text">Sign me up for details from Sickst</span>
-                                        </label>
-                                        <div className="terms">
-                                            <span className="title">By hitting the "Sign up" button, you agree to the</span>
-                                            <span className="tc">
-                                                <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <SecondaryButton btnName={'Sign up'} type="submit" size="" to={'/'}/>
-                                </form>
+                                <Signup />
                             </div>
                         </div>
                         <div className="col-5 login">
                             <span className="login-link">
-                                Have an account? <a href="#">Log in</a>
+                                Have an account? <NavLink to='/register/login' btnName='Log in'/>
                             </span>
                             <div className="split">
                                 <span className="line"></span>
@@ -89,7 +61,7 @@ const Register = () => {
                 </div>
             </div>
         </div>
-    </Fragment>
+    </AuthProvider>
 }
 
 export default Register;

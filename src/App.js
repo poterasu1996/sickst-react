@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Register from './pages/Register';
 import SubscriptionsWomen from './pages/SubscriptionsWomen';
 import SubscriptionsMen from './pages/SubscriptionsMen';
+import { AuthProvider } from './contexts/AuthContext';
 import { Fragment } from 'react';
 
 function App() {

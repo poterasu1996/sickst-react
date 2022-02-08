@@ -124,6 +124,8 @@
                         .cb {
                             z-index: -1;
                             position: absolute;
+                            top: 1.5rem;
+                            left: 3rem;
                             
                             &:checked~.custom-cb {
                                 background-color: #cc3633;
