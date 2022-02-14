@@ -1,6 +1,5 @@
 import { Fragment, useState } from "react";
-import { Button, Modal } from "react-bootstrap";
-import HamburgerBtn from "./HamburgerBtn";
+import { Button } from "react-bootstrap";
 
 import Logo from "./Logo";
 import NavMenu from "./NavMenu";

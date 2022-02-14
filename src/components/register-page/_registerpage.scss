@@ -104,6 +104,11 @@
                         border-color: #cc3633;
                         box-shadow: 0 0 0 0.25rem rgba($color: #cc3633, $alpha: 0.25);
                     }
+                    
+                    &.invalid-form-control {
+                        border-color: #cc3633;
+                        box-shadow: 0 0 0 0.25rem rgba($color: #cc3633, $alpha: 0.25);
+                    }
                 }
                 #bdate {
                     padding-left: 2.4rem;
@@ -193,6 +198,14 @@
                         }
                     }
                 }
+            }
+            .invalid-field {
+                justify-content: unset;
+                padding-top: .5rem;
+                height: .2rem;
+                font-size: 1.3rem;
+                font-weight: 700;
+                margin-left: 1rem;
             }
             .button-second {
                 margin-top: 2.4rem;
