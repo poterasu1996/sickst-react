@@ -6,7 +6,6 @@ import CollectionSection from "../components/subscriptions-page/CollectionSectio
 const SubscriptionsWomen = () => {
     return (
         <Fragment>
-            <Header />
             <div className="subs-body">
                 <SubscriptionsBanner />
                 <CollectionSection />

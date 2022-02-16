@@ -1,29 +1,29 @@
 import './App.scss';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
-import Register from './pages/Register';
+import RegisterPage from './pages/RegisterPage';
 import SubscriptionsWomen from './pages/SubscriptionsWomen';
 import SubscriptionsMen from './pages/SubscriptionsMen';
-import { AuthProvider } from './contexts/AuthContext';
-import { Fragment } from 'react';
+import Header from './components/header/Header';
+import { useLocation } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
 
 function App() {
+  let location = useLocation();
   return (
-    <Fragment>
-      <Route path="/" exact>
-        <Home />
-      </Route>
-      <Route path="/register" exact>
-        <Register />
-      </Route>
-      <Route path="/subscriptions/women" exact>
-        <SubscriptionsWomen />
-      </Route>
-      <Route path="/subscriptions/men" exact>
-        <SubscriptionsMen />
-      </Route>
-    </Fragment>
+    <>
+      {location.pathname !== '/register' && location.pathname !== '/register/login' && <Header />}
+      <main>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/register" component={RegisterPage}/>
+          <Route exact path="/register/login" component={LoginPage}/>
+          <Route exact path="/subscriptions-women" component={SubscriptionsWomen}/>
+          <Route exact path="/subscriptions-men" component={SubscriptionsMen}/>
+        </Switch>
+      </main>
+    </>
   );
 }
 

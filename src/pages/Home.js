@@ -12,7 +12,6 @@ import Footer from "../components/footer/Footer";
 
 const Home = () => {
     return <Fragment>
-        <Header />
         <div className="main-content">
             <Banner />
             <div className="main-body">

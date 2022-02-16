@@ -6,10 +6,10 @@ const NavMenu = () => {
     return <Fragment>
         <ul className='nav-menu'>
             <li className='nav-link'>
-                <NavLink btnName={'Women'} to={'subscriptions/women'} />
+                <NavLink activeClassName='active-link' btnName={'Women'} to={'subscriptions-women'} />
             </li>
             <li className='nav-link'>
-                <NavLink btnName={'Men'} to={'subscriptions/men'} />
+                <NavLink btnName={'Men'} to={'subscriptions-men'} />
             </li>
         </ul>
     </Fragment>
