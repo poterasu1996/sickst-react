@@ -7,7 +7,7 @@ const FormField = (props, ref) => {
     return (
         <>
             <FloatingLabel
-            controlId={props.control}
+            controlid={props.control}
             label={props.label}
             className="form-field"
             >

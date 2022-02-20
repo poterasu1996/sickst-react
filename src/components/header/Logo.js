@@ -1,15 +1,16 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 const Logo = () => {
     return <Fragment>
         <div className='logo'>
-            <a href="/" className='logo-link'>
+            <Link to="/" className='logo-link'>
                 <h1 className='big-s'>S</h1>
                 <div className='sickst'>
                     <h3 className='pt-1'>ickst</h3>
                     <h4 className='pt-2'>&bull;Bucharest</h4>
                 </div>
-            </a>
+            </Link>
         </div>
     </Fragment>
 }

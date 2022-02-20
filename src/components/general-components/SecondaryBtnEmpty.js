@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 const SecondaryBtnEmpty = (props) => {
   return (
-    <Link className="button-second-empty" to={props.to}>
-      {props.btnName}
-    </Link>
+    <Button {...props} className="button-second-empty">{props.btnname}</Button>
   );
 };
 

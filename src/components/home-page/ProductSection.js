@@ -8,45 +8,86 @@ import image2 from "../../assets/img/versace-eros.jpg";
 import image3 from "../../assets/img/dolce-gabbana-the-one-for-men.jpg";
 
 const ProductSection = () => {
-    return <Fragment>
-        <div className="products-section">
-            <div className="container">
-                <div className="title">Cele mai dorite parfumuri</div>
-                <div className="filter-tabs">
-                    <a className="active man" href="#">Pentru el</a>
-                    <a href="#">Pentru ea</a>
-                </div>
+  const list = [
+    {
+      image: image1,
+      brand: "Invictus",
+      model: "Eau de toilette",
+      price: "120",
+    },
+    {
+      image: image2,
+      brand: "Sauvage",
+      model: "Eau de parfum",
+      price: "290",
+    },
+    {
+      image: image3,
+      brand: "Paco Rabanne",
+      model: "Parfum",
+      price: "550",
+    },
+    {
+      image: image1,
+      brand: "Invictus",
+      model: "Eau de toilette",
+      price: "120",
+    },
+    {
+      image: image2,
+      brand: "Sauvage",
+      model: "Eau de parfum",
+      price: "290",
+    },
+    {
+      image: image3,
+      brand: "Paco Rabanne",
+      model: "Parfum",
+      price: "550",
+    },
+  ];
 
-                <div className="products">
-                    <div className="row">
-                        <Product 
-                            image={image1}
-                            brand={'Invictus'}
-                            model={'Eau de toilete'}
-                            price={'221'}
-                        />
-                        <Product 
-                            image={image2}
-                            brand={'Sauvage'}
-                            model={'Eau de parfum'}
-                            price={'321'}
-                        />
-                        <Product 
-                            image={image3}
-                            brand={'Paco Rabanne'}
-                            model={'Parfum'}
-                            price={'521'}
-                        />
-                    </div>
-                </div>
-                <div className="more-prod">
-                    <div className="col-3">
-                        <SecondaryBtnEmpty btnName={'Vezi mai multe produse'} to={'/'}/>
-                    </div>
-                </div>
+  const size = 3
+  const items = list.slice(0, size)
+
+  const moreProductsHandler = (clicknr) => {
+    items = 0
+  }
+
+  console.log(items.length)
+
+  return (
+    <Fragment>
+      <div className="products-section">
+        <div className="container">
+          <div className="title">Cele mai dorite parfumuri</div>
+          <div className="filter-tabs">
+            <a className="active man" href="#">
+              Pentru el
+            </a>
+            <a href="#">Pentru ea</a>
+          </div>
+
+          <div className="products">
+            <div className="row">
+              {items.map((item, index) => (
+                <Product
+                  key={index}
+                  image={item.image}
+                  brand={item.brand}
+                  model={item.model}
+                  price={item.price}
+                />
+              ))}
             </div>
+          </div>
+          <div className="more-prod">
+            <SecondaryBtnEmpty btnname={"Vezi mai multe produse"} />
+          </div>
         </div>
+      </div>
     </Fragment>
-}
+  );
+};
 
 export default ProductSection;

@@ -1,9 +1,9 @@
 
-import NavLink from "../header/NavLink";
 
 import insta from '../../assets/img/svg/instagram.svg'
 import facebook from '../../assets/img/svg/facebook.svg'
 import youtube from '../../assets/img/svg/youtube.svg'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return <footer>
@@ -19,7 +19,7 @@ const Footer = () => {
                     <span className="title">Despre Sickst</span>
                     <ul>
                         <li className="list-item">
-                            <NavLink btnName={'Despre noi'} to={'/about-us'} />
+                            <Link to="/about-us">Despre noi</Link>
                         </li>
                         <li className="list-item">
                             <a href="#">Ajutor</a>
@@ -39,21 +39,21 @@ const Footer = () => {
                             <a href="#">Shop</a>
                         </li>
                         <li className="list-item">
-                            <NavLink btnName={'Ofera cadou'} to={'/gift'} />
+                            <a href="/gift">Ofera cadou</a>
                         </li>
                         <li className="list-item">
-                            <NavLink btnName={'Shop pentru el'} to={'subscription/men'} />
+                            <a href="/subscriptions-men">Shop pentru el</a>
                         </li>
                         <li className="list-item">
-                            <NavLink btnName={'Shop pentru ea'} to={'subscription/women'} />
+                            <a href="/subscriptions-women">Shop pentru ea</a>
                         </li>
                     </ul>
                     <ul>
                         <li className="list-item">
-                            <NavLink btnName={'Invita prietenii'} to={'/referall'} />
+                            <a href="/referall">Invita prietenii</a>
                         </li>
                         <li className="list-item">
-                            <NavLink btnName={'Pool lunar'} to={'/monthly-pool'} />
+                            <a href="/monthly-pool">Pool lunar</a>
                         </li>
                     </ul>
                 </div>
@@ -77,8 +77,8 @@ const Footer = () => {
                     <span className="company">SICKST &copy; 2021. All rights reserved. Created in Bucharest</span>
                 </div>
                 <div className="right">
-                    <NavLink btnName={'Privacy Policy'} to={'/privacy-policy'} />
-                    <NavLink btnName={'Terms & Conditions'} to={'/terms'} />
+                    <Link to='/privacy-policy'>Privacy Policy</Link>
+                    <Link to='/terms'>Terms & Conditions</Link>
                 </div>
             </div>
         </div>

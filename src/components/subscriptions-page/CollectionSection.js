@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import SecondaryButton from "../general-components/SecondaryButton";
 
 import cardImg1 from '../../assets/img/parfume-img.jpg'
+import SecondaryLink from "../general-components/SecondaryLink";
 
 const CollectionSection = () => {
     return <Fragment>
@@ -17,7 +17,7 @@ const CollectionSection = () => {
                     <div className="card-content">
                         <div className="title">Make It Happen</div>
                         <div className="description">Staying in your comfort zone is so 2021. Boldly go into the new year with these badass scents.</div>
-                        <SecondaryButton btnName={'Browse Collection'} to={'/collections'} />
+                        <SecondaryLink btnname={'Browse Collection'} to="/" />
                     </div>
                 </div>
 
@@ -28,7 +28,7 @@ const CollectionSection = () => {
                     <div className="card-content">
                         <div className="title">Make It Happen</div>
                         <div className="description">Staying in your comfort zone is so 2021. Boldly go into the new year with these badass scents these badass scents.</div>
-                        <SecondaryButton btnName={'Browse Collection'} to={'/collections'} />
+                        <SecondaryLink btnname={'Browse Collection'} to="/" />
                     </div>
                 </div>
                 <div className="col-4 card">
@@ -38,7 +38,7 @@ const CollectionSection = () => {
                     <div className="card-content">
                         <div className="title">Make It Happen</div>
                         <div className="description">Staying in your comfort zone is so 2021. Boldly go into the new year with these badass scents.</div>
-                        <SecondaryButton btnName={'Browse Collection'} to={'/collections'} />
+                        <SecondaryLink btnname={'Browse Collection'} to="/" />
                     </div>
                 </div>
             </div>

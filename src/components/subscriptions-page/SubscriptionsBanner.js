@@ -1,12 +1,9 @@
-import { Fragment } from "react";
-
-import SecondaryButton from "../general-components/SecondaryButton";
-
 import bimg1 from "../../assets/img/subs-banner1.jpg";
+import SecondaryLink from "../general-components/SecondaryLink";
 
 const SubscriptionsBanner = () => {
   return (
-    <Fragment>
+    <>
       <div className="subs-banner">
         <div
           className="subs-banner--wrapper"
@@ -23,11 +20,11 @@ const SubscriptionsBanner = () => {
               proves that you can have safe, clean scents that smell utterly
               alluring.
             </div>
-            <SecondaryButton btnName={"Get started"} to={"/register"} />
+            <SecondaryLink btnname={"Get started"} to="/" />
           </div>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 };
 

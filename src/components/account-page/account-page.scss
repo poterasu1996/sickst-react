@@ -1,0 +1,189 @@
+.account-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background: #f9f9f9;
+    
+    // account
+    .account-content {
+        .row {
+            div {
+                justify-content: flex-start;
+            }
+            .subtitle {
+                margin: 3rem 0 0 0;
+            }
+            .details {
+                flex-direction: row;
+                align-items: flex-start;
+                .orders {
+                    flex-direction: column;
+                    height: 100%;
+                    .user-orders {
+                        padding: 2rem;
+                        margin-top: 2.4rem;
+                        min-height: 500px;
+                        border: 1px solid #dcdfe5;
+                        flex-direction: column;
+                        background: #fff;
+                        .subtitle {
+                            margin: 0;
+                        }
+                        .row {
+                            flex-direction: row;
+                            margin: 1rem 0;
+                        }
+                        .row-subtitle {
+                            justify-content: space-between;
+                        }
+                        .last-order {
+                            align-items: flex-start;
+                            .card {
+                                padding: 1rem;
+                                justify-content: center;
+                                width: 33.3333%;
+                                .title {
+                                    display: block;
+                                    font-size: 1.4rem;
+                                    line-height: 2.2rem;
+                                    font-weight: 500;
+                                    text-align: center;
+                                    margin: .5rem 0;
+                                }
+                                .product-img {
+                                    padding: 0 1rem;
+                                    max-height: 20rem;
+                                    height: 100%;
+                                    max-height: 15rem;
+                                    img {
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        object-fit: contain;
+                                    }
+                                }
+                                .product-description {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    margin: 1rem 0;
+                                    .product-rating {
+                                        .five-stars {
+                                            align-items: center;
+                                            img {
+                                                width: 1rem;
+                                                height: 1rem;
+                                            }
+                                        }
+                                    }
+                                    .product-name {
+                                        font-size: 1.2rem;
+                                        line-height: 2.2rem;
+                                    }
+                                    .product-price {
+                                        font-size: 1.2rem;
+                                        line-height: 2.2rem;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                            &-details {
+                                flex-direction: column;
+                                align-items: flex-end;
+                                flex: 1;
+                                padding-left: 2rem;
+                                .detail {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    border-bottom: 1px solid #dcdfe5;
+                                    padding: 1.6rem 0;
+                                    &:first-of-type {
+                                        padding: 0;
+                                        padding-bottom: 1.6rem;
+                                    }
+                                    .left {
+                                        display: flex;
+                                        flex-direction: column;
+                                        &-title {
+                                            font-size: 1.6rem;
+                                            line-height: 2.4rem;
+                                            font-weight: 400;
+                                        }
+                                        &-description {
+                                            font-size: 1.2rem;
+                                            line-height: 2.4rem;
+                                            font-weight: 400;
+                                            color: #666;
+                                        }
+                                    }
+                                    .right {
+                                        &-title {
+                                            font-size: 1.6rem;
+                                            line-height: 2.4rem;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                    &.total {
+                                        justify-content: flex-end;
+                                        border-bottom: unset;
+                                        .right {
+                                            margin-left: 1.6rem;
+                                        }
+                                    }
+                                }
+                                .discount {
+                                    color: #cc3633;
+                                }
+                                h4 {
+                                    margin: .5rem 0;
+                                }
+                            }
+                        }
+                    }
+                } 
+                .user-details {
+                    flex-direction: column;
+                    margin: 0 auto;
+                    .subtitle {
+                        font-size: 28px;
+                        line-height: 40px;
+                        font-weight: 600;
+                        margin: 1.8rem 0 0 0;
+                    }
+                    .user-form {
+                        .btn-wrapper {
+                            margin-top: 2.4rem;
+                            display: flex;
+                            justify-content: space-between;
+                            button {
+                                max-width: 200px;
+                            }
+                            .button-second {
+                                margin: 0;
+                            }
+                        }
+                        .buttons {
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            margin: 0;
+                            margin-top: 2.5rem;
+                            div:first-of-type{
+                                padding-left: 0;
+                            }
+                            div:last-of-type {
+                                padding-right: 0;
+                            }
+                            .button-second {
+                                font-size: 1.6rem;
+                                margin: 0;
+                                padding: 0;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

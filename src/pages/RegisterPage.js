@@ -1,14 +1,13 @@
 import { Fragment } from "react";
 import SimpleHeader from "../components/header/SimpleHeader";
 
-import Signup from "../components/auth/Signup";
 import NavLink from "../components/header/NavLink";
-import { AuthProvider } from "../contexts/AuthContext";
 import maleIcon from "../assets/img/male-icon.png"
 import femaleIcon from "../assets/img/female-icon.jpg"
+import AuthForm from "../components/auth/AuthForm";
 
 const RegisterPage = () => {
-    return <AuthProvider>
+    return <>
         <SimpleHeader />
         <div className="main-content">
             <div className="main-body">
@@ -36,7 +35,7 @@ const RegisterPage = () => {
                         </div>
                         <div className="col-5">
                             <div className="form">
-                                <Signup />
+                                <AuthForm />
                             </div>
                         </div>
                         <div className="col-5 login">
@@ -60,7 +59,7 @@ const RegisterPage = () => {
                 </div>
             </div>
         </div>
-    </AuthProvider>
+    </>
 }
 
 export default RegisterPage;

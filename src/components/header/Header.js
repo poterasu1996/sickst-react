@@ -1,14 +1,20 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import AuthContext from "../../store/auth-context";
 
 import Logo from "./Logo";
 import NavMenu from "./NavMenu";
-import NavLink from "./NavLink";
 import SideModal from "./SideModal";
 
 const Header = () => {
   const [modalShow, setModalShow] = useState(false);
-    
+  const accountBtn = <Link to="/account">Account</Link>
+  const loginBtn = <Link to="/register/login">Log in</Link>
+
+  const authCtx = useContext(AuthContext);
+  const isLoggedIn = authCtx.isLoggedIn;
+
   return (
     <header>
       <div className="container header">
@@ -16,7 +22,9 @@ const Header = () => {
         <NavMenu />
 
         <div className="right-side">
-          <NavLink btnName={'Login'} to={'/register/login'} />
+          {!isLoggedIn && loginBtn}
+          {isLoggedIn && accountBtn}
+
           <Button 
             variant="menu"
             onClick={() => setModalShow(true)}

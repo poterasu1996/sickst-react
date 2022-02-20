@@ -1,7 +1,6 @@
 import React from "react";
 import { Fragment } from "react";
 
-import Header from "../components/header/Header";
 import Banner from "../components/home-page/Banner";
 import SubsInfo from "../components/home-page/SubsInfo";
 import Brands from "../components/home-page/Brands";

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 const SecondaryButton = (props) => {
     let btnSize = '';
@@ -6,7 +6,7 @@ const SecondaryButton = (props) => {
         btnSize = props.size;
     }
     return (
-        <Link className={`button-second ${btnSize} mt-5`} to={props.to}>{props.btnName}</Link>
+        <Button className={`button-second ${btnSize}`}>{props.btnname}</Button>
     );
 }
 

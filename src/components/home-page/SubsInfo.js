@@ -10,7 +10,7 @@ const SubsInfo = () => {
             <div className="row title">
                 <span>Cum functioneaza:</span>
             </div>
-            <div className="row mt-5 subs-cards">
+            <div className="row subs-cards">
 
                 {/* card */}
                 <div className="col-12 col-md-4">

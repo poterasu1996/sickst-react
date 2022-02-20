@@ -1,10 +1,9 @@
 import { NavLink } from "react-router-dom";
 import Login from "../components/auth/Login";
 import SimpleHeader from "../components/header/SimpleHeader";
-import { AuthProvider } from "../contexts/AuthContext";
 
 const LoginPage = () => {
-    return <AuthProvider>
+    return <>
         <SimpleHeader />
         <div className="main-content">
             <div className="main-body">
@@ -19,6 +18,10 @@ const LoginPage = () => {
                             </div>
                         </div>
                         <div className="col-5 login">
+                            <div className="login-link">
+                                <a href="#">Forgot your password?</a>
+                                <a href="#">Don't have an account?</a>
+                            </div>
                             <div className="split">
                                 <span className="line"></span>
                                 <span className="text">or</span>
@@ -36,7 +39,7 @@ const LoginPage = () => {
                 </div>
             </div>
         </div>
-    </AuthProvider>
+    </>
 }
 
 export default LoginPage;

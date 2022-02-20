@@ -1,9 +1,13 @@
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { Button } from "react-bootstrap";
-import SecondaryButton from "../general-components/SecondaryButton";
 import Transition from "react-transition-group/Transition";
+import { Link } from "react-router-dom";
+import SecondaryBtnEmpty from "../general-components/SecondaryBtnEmpty";
+import AuthContext from "../../store/auth-context";
 
 const SideModal = (props) => {
+    const authCtx = useContext(AuthContext);
+
     return (
         <Fragment>
             <div 
@@ -42,7 +46,8 @@ const SideModal = (props) => {
                                 <a href="#">Gifts</a>
                                 <a href="#">Despre noi</a>
                             </div>
-                            <SecondaryButton btnName={'Autentificare'} to={'/register'} onClick={props.onHide} />
+                            {!authCtx.isLoggedIn && <Link to="register" className="button-second" onClick={props.onHide}>Autentificare</Link>}
+                            {authCtx.isLoggedIn && <Link to="subscriptions" className="button-second" onClick={props.onHide}>Get started</Link>}
                         </div>
                     </div>
                 )}

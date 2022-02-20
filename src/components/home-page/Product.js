@@ -4,7 +4,7 @@ import star from "../../assets/img/svg/star.svg";
 
 const Product = (props) => {
     return <Fragment>
-        <div className="col-4">
+        <div className="col-6 col-lg-4">
             <div className="product-card">
                 <div className="product-card-image">
                     <img src={props.image} alt=""></img>
